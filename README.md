@@ -11,14 +11,14 @@ junit、jacoco、maven
 1. 首先你需要将这份maven项目克隆至本地，并进入项目工程目录使用命令`mvn test`进行测试（你也可以选择将这个项目导入到Eclipse或Intellij等工具中在导航栏选择Run as maven test）；
 
 2. 随后你会发现在`/target/site/jacoco`目录下有一个产生了一个名字为`index.html`的文件（至于为什么会产生，请查看pom.xml配置），在浏览器打开这个文件，你会看到下图：
-![image](https://github.com/2019NJUSAT/White-Box-Testing-/blob/master/IMG/image-20191115210656311.png)
+![image](https://github.com/JB-Bai/White-Box-Testing-/blob/master/IMG/image-20191115210656311.png)
   
 
   
 
 以  Method3为例，在HelloWorldTest中仅对Method3进行了两次测试，导致Method3的语句覆盖率和分支覆盖率均未达到100%，如下所示：
 
-![image-20191115210743488](https://github.com/2019NJUSAT/White-Box-Testing-/blob/master/IMG/image-20191115210743488.png)
+![image-20191115210743488](https://github.com/JB-Bai/White-Box-Testing-/blob/master/IMG/image-20191115210743488.png)
 
 其中绿色表示你的测试用例所覆盖的分支或语句，红色表示没有覆盖的分支或语句，黄色表示没有覆盖完全。
 
@@ -36,6 +36,6 @@ junit、jacoco、maven
 
 2.编写代码，完成HelloWorld.java与HelloWorldTest.java。html报告:
 
-![html-report-image](https://github.com/2019NJUSAT/White-Box-Testing-/blob/master/IMG/myhtmlreport.png)
+![html-report-image](https://github.com/JB-Bai/White-Box-Testing-/blob/master/IMG/myhtmlreport.png)
     
     出现的1处Missed Branches是由于该分支会引发除0错误，无法覆盖；其他分支全部覆盖。
