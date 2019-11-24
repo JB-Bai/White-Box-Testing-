@@ -39,4 +39,5 @@ maven3.6:https://www.jianshu.com/p/e572979171cd 搭配 https://blog.csdn.net/qq_
 2.编写代码，完成HelloWorld.java与HelloWorldTest.java。html报告:
 
 ![html-report-image](https://github.com/JB-Bai/White-Box-Testing-/blob/master/IMG/myhtmlreport.png)
+
 出现的1处Missed Branches是由于该分支会引发除0错误，无法覆盖；其他分支全部覆盖。
