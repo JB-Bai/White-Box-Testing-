@@ -28,3 +28,10 @@ junit、jacoco、maven
 ## 提交方式
 
 将github链接分享给助教，在README里截图最后的html报告
+
+## 实验报告
+
+1.首先配置环境,包括jdk1.8和maven3.6,配置过程参考JDK1.8:https://blog.csdn.net/weixin_43689776/article/details/95052861
+                                            maven3.6:https://www.jianshu.com/p/e572979171cd 搭配 https://blog.csdn.net/qq_37372909/article/details/80548675
+2.编写代码，完成HelloWorld.java与HelloWorldTest.java。html报告:![html-report-image](https://github.com/2019NJUSAT/White-Box-Testing-/blob/master/IMG/myhtmlreport.png)
+    出现的1处Missed Branches是由于该分支会引发除0错误，无法覆盖；其他分支全部覆盖。

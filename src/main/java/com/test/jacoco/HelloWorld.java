@@ -50,7 +50,8 @@ public class HelloWorld {
     	 * TODO: You need to complete this method to determine whether  a
     	 * triangle is formed or not when given the input edge a, b and c.
     	 */
-    	return true;
+		return (a+b>c &&b+c>a &&a+c>b);
+
     }
     public boolean isBirthday(int year, int month, int day) {
     	/**
@@ -58,7 +59,31 @@ public class HelloWorld {
     	 * legitimate date of birth between 1990/01/01 and 2019/10/01 is 
     	 * formed or not when given the input year, month and day.
     	 */
-    	return true;
+		if (year>=1990&&year<=2019){
+			switch (month){
+				case 1:
+				case 3:
+				case 5:
+				case 7:
+				case 8:
+				case 10:
+				case 12:return day>=1 &&day <=31;
+				case 4:
+				case 6:
+				case 9:
+				case 11:return day>=1 &&day <=30;
+				case 2: if((year%4==0&&year%100!=0)||(year%400==0)){
+					return day>=1 &&day <=29;
+				}
+				else{
+					return day>=1 &&day <=28;
+				}
+					default: return false;
+
+			}
+		}
+		else
+			return false;
     	
     }
     public Double miniCalculator(double a, double b, char op) {
@@ -67,8 +92,19 @@ public class HelloWorld {
     	 * can calculate the formula: "a op b", the op here can be four basic  
     	 * operation: "+","-","*","/". 
     	 */
-    	double result = 0.0;
-    	return result;
+    	//double result = 0.0;
+		switch (op){
+			case '+':return a+b;
+			case '-':return a-b;
+			case '*':return a*b;
+			case '/': return a/b;//It seems dividing 0.0 in Java is not wrong which equals to infinity.
+			default:System.out.println("Invalid Operation!");
+					return 0.0;
+		}
+
+
+    	//return result;
     }
     
 }
+

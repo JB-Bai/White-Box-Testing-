@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.test.jacoco</groupId>
     <artifactId>testJacoco</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>3.6.2</version>
 
     <name>JaCoCo</name>
 
